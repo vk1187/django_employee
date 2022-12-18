@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+        td{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table border=1 style="padding:10px;">
+            <tr>
+                <td><label for="first_name">first_name:</label></td>
+                <td><input type="text" id="first_name" name="first_name"></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">last_name:</label></td>
+                <td><input type="text" id="last_name" name="last_name"></td>
+            </tr>
+            {% comment %} <tr>
+                <td><label for="name">name:</label></td>
+                <td><input type="number" id="name" name="name"></td>
+            </tr> {% endcomment %}
+            <tr>
+                <td><label for="email">email:</label></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+            <tr>
+                <td><label for="phone_number">phone_number:</label></td>
+                <td><input type="text" id="phone_number" name="phone_number"></td>
+            </tr>
+            <tr >
+                <td colspan=2><button>submit</button></td>
+            </tr>
+            
+        </table>
+      </form>
+</body>
+</html>
